@@ -42,7 +42,7 @@ casper.then(function(){
     }
     return r;
   });
-  casper.echo(JSON.stringify(table));
+  casper.echo(JSON.stringify({card: cardno, books:table}));
 /*
   for(var i=0; i<table.length; i++){
     casper.echo(util.format("barcode: %s, title: %s, checkout: %s, due: %s",
